@@ -31,6 +31,10 @@ int main(void)
 	fp = fopen("UNAMED.C","w");
 	clrscr();
 	buffer = (char *)malloc(80*25);
+	if(buffer == NULL)
+	{
+		return 0;
+	}
 	for(t = 0; t < 80*25; t++)
 	{
 		buffer[t] = 0;
